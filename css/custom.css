@@ -1,0 +1,20 @@
+/* Personalizaciones propias del sitio (no tocar css/*.css compilados) */
+
+/* Portada: nombres y anillos */
+:root {
+  /* Snell Roundhand solo existe en macOS/iOS (no se puede embeber como
+     web font); Pinyon Script es el reemplazo libre mas cercano para el
+     resto de dispositivos. */
+  --cover-font: 'Snell Roundhand', 'Pinyon Script', cursive;
+}
+#cover-couple-names {
+  font-family: var(--cover-font);
+}
+
+/* Sobre (intro): nombres antes de abrir la invitacion */
+:root {
+  --intro-font: 'UnifrakturMaguntia', cursive;
+}
+#intro-couple-names {
+  font-family: var(--intro-font);
+}
