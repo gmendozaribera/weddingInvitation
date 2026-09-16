@@ -1,0 +1,14 @@
+{
+  "name": "boda-marizol-german",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Invitacion de boda estatica - Marizol & German",
+  "scripts": {
+    "serve": "serve .",
+    "pdf": "node scripts/export-to-pdf.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0",
+    "serve": "^14.2.0"
+  }
+}
