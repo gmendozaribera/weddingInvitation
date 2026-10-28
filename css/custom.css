@@ -38,3 +38,29 @@
 h2.font-airthay {
   font-family: var(--section-title-font);
 }
+
+/* Marco ornamental (seccion Regalo): doble filete + esquinas decoradas */
+.orn-frame {
+  position: relative;
+  margin: 1.25rem 1.5rem 0;
+  padding: 1.5rem 1rem;
+  border: 1px solid #fff;
+}
+.orn-frame::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  pointer-events: none;
+}
+.orn-corner {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url('../templates/classic/frame-corner.svg') no-repeat center / contain;
+  pointer-events: none;
+}
+.orn-corner.tl { top: -6px; left: -6px; }
+.orn-corner.tr { top: -6px; right: -6px; transform: scaleX(-1); }
+.orn-corner.bl { bottom: -6px; left: -6px; transform: scaleY(-1); }
+.orn-corner.br { bottom: -6px; right: -6px; transform: scale(-1, -1); }
