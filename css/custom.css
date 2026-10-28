@@ -18,3 +18,23 @@
 #intro-couple-names {
   font-family: var(--intro-font);
 }
+
+/* Frase inicial: "Todos los dias pueden ser el comienzo de algo nuevo" */
+:root {
+  --intro-quote-font: 'Pinyon Script', cursive;
+}
+#intro-quote {
+  font-family: var(--intro-quote-font);
+}
+
+#second-quote {
+  font-family: var(--intro-quote-font);
+}
+
+/* Titulares h2 de cada seccion */
+:root {
+  --section-title-font: 'Great Vibes', cursive;
+}
+h2.font-airthay {
+  font-family: var(--section-title-font);
+}
