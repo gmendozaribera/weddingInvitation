@@ -64,3 +64,49 @@ h2.font-airthay {
 .orn-corner.tr { top: -6px; right: -6px; transform: scaleX(-1); }
 .orn-corner.bl { bottom: -6px; left: -6px; transform: scaleY(-1); }
 .orn-corner.br { bottom: -6px; right: -6px; transform: scale(-1, -1); }
+
+/* Agradecimientos: texto centrado sobre la carta de sobre.png.
+   Medidas en cqw para que el texto escale junto con la imagen. */
+.sobre-carta {
+  position: relative;
+  container-type: inline-size;
+  margin: 0 auto;
+}
+.sobre-carta > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.sobre-carta__texto {
+  position: absolute;
+  left: 37%;
+  right: 10%;
+  top: 37%;
+  bottom: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4cqw;
+  font-size: 2.3cqw;
+  line-height: 1.35;
+  color: #212121;
+  text-align: center;
+}
+.sobre-carta__frase {
+  font-size: 2.9cqw;
+  font-style: italic;
+}
+.sobre-carta__grupos {
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4cqw 2cqw;
+}
+.sobre-carta__titulo {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 1.85cqw;
+  white-space: nowrap;
+  margin-bottom: 0.3em;
+}
